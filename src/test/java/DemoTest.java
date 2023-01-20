@@ -22,6 +22,7 @@ public class DemoTest {
         caps.setCapability("platformName" , "Android");
         caps.setCapability("appium:platformVersion" , "9");
         caps.setCapability("appium:deviceName" , "Android Emulator");
+        // TODO dynamic apk location from new commits to branch/PR
         caps.setCapability("appium:app" ,
                 System.getProperty("user.dir")+"/apps/app-debug.apk");
         driver = new AndroidDriver(new URL("http://localhost:4723"), caps);
